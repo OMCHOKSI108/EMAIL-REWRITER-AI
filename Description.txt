@@ -1,0 +1,24 @@
+Project Description: AI Email Rewriter
+
+This project is a Streamlit-based web application that leverages Cohere's large language models to rewrite and enhance emails. The main features and structure are as follows:
+
+Features:
+- Users can input their original email and select a desired tone (Professional, Friendly, Persuasive, Apologetic).
+- The app rewrites the email using Cohere's AI models, improving clarity, professionalism, and politeness while maintaining the original message.
+- Users can select from available Cohere models (e.g., command, command-light) and provide their Cohere API key securely.
+- Optionally, the app can show a visual diff highlighting changes between the original and rewritten email.
+- The app supports environment variable fallback for API keys via a .env file.
+
+Key Files:
+- app.py: The main Streamlit app, handling UI, user input, and integration with the backend.
+- email_rewriter.py: Contains the EmailRewriter class, which interacts with the Cohere API to rewrite emails based on user configuration.
+- api_model_checker.py: Checks and lists available Cohere models for the user to select.
+- .env: Stores API keys securely for different providers (Cohere, OpenAI, Gemini, etc.).
+
+How it Works:
+1. User enters their Cohere API key and email text in the sidebar.
+2. User selects the desired tone and Cohere model.
+3. On clicking 'Rewrite Email', the app sends the request to Cohere's API and displays the rewritten email.
+4. Optionally, the user can view a diff of changes between the original and rewritten email.
+
+This tool is designed to help users quickly enhance the tone and clarity of their emails using state-of-the-art AI models, with a focus on privacy and ease of use.
