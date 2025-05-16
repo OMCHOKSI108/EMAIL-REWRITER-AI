@@ -106,7 +106,7 @@ git add .
 git commit -m "Initial commit"
 ```
 
-Create a new repository on GitHub and push your code:git remote add origin https://github.com/your-username/your-repo-name.git
+Create a new repository on GitHub and push your code:git remote add origin [https://github.com/OMCHOKSI108/EMAIL-REWRITER.git](https://github.com/OMCHOKSI108/EMAIL-REWRITER-A)
 ```
 git branch -M main
 git push -u origin main
