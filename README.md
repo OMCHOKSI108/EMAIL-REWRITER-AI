@@ -1,4 +1,4 @@
-### ✉️ AI Email Rewriter
+# ✉️ AI Email Rewriter
 Transform your emails with AI-powered tone and clarity enhancement using Cohere and Streamlit!
 
 🚀 Overview
