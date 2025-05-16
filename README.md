@@ -1,6 +1,8 @@
 # ✉️ AI Email Rewriter
 Transform your emails with AI-powered tone and clarity enhancement using Cohere and Streamlit!
 
+Live app steamlit https://email-rewriter-ai-sans-3010.streamlit.app/
+
 🚀 Overview
 The AI Email Rewriter is a web application that leverages Cohere's natural language processing capabilities to rewrite emails in various tones (Professional, Friendly, Persuasive, Apologetic). Built with Streamlit, this app provides a sleek and interactive interface for users to enhance their email communication effortlessly.
 ✨ Features
