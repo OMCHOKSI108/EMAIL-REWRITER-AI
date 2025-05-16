@@ -39,10 +39,10 @@ Copy the key (it will look like a 40-character string, e.g., your-cohere-api-key
 
 
 Add the API Key to Your Project  
-
+```
 Create a .env file in the root of your project directory (D:\OM_CHOKSI\AI_EMAIL\AI-Email-Rewriter\.env).
 Add the following line to the .env file:COHERE_KEY=your-cohere-api-key-here
-
+```
 
 Replace your-cohere-api-key-here with your actual Cohere API key.
 
@@ -52,14 +52,14 @@ How the Cohere API is Integrated
 The app uses the cohere Python library to interact with Cohere's API.
 In email_rewriter.py, the EmailRewriter class initializes a Cohere client with your API key:self.client = cohere.Client(api_key=api_key)
 
-
+```
 The /chat endpoint is called to rewrite emails using the command model (default):response = self.client.chat(
     model=config.model,
     message=prompt,
     temperature=config.temperature,
     max_tokens=config.max_tokens
 )
-
+```
 
 The app supports models like command and command-light, which are hardcoded in api_model_checker.py since Cohere doesn’t provide a /models endpoint as of May 2025.
 
@@ -99,21 +99,25 @@ Deploy your app to Streamlit Community Cloud to share it with the world. This is
 Ensure your project is in a GitHub repository.
 
 Initialize a Git repository (if not already done):git init
+```
 git add .
 git commit -m "Initial commit"
-
+```
 
 Create a new repository on GitHub and push your code:git remote add origin https://github.com/your-username/your-repo-name.git
+```
 git branch -M main
 git push -u origin main
-
+```
 
 
 2. Create a requirements.txt File
 Streamlit Community Cloud needs a requirements.txt file to install dependencies. Create this file in your project root:
+```
 streamlit
 python-dotenv
 cohere
+```
 
 3. Sign Up for Streamlit Community Cloud
 
@@ -121,13 +125,13 @@ Visit Streamlit Community Cloud and sign up using your GitHub account.
 Log in to your account.
 
 4. Deploy the App
-
+```
 On the Streamlit Community Cloud dashboard, click New App.
 Select your GitHub repository, branch (e.g., main), and main file path (app.py).
 In the Advanced Settings, add your Cohere API key as an environment variable:
 Key: COHERE_KEY
 Value: your-cohere-api-key-here
-
+```
 
 Click Deploy. Wait a few minutes, and your app will be live on the web! 🌐
 
@@ -184,13 +188,12 @@ Enhance the Prompt: Adjust the prompt in email_rewriter.py to improve rewriting 
 
 
 🐛 Troubleshooting
-
+```
 Invalid Cohere API Key: Ensure your API key is correct. Test it using:curl https://api.cohere.ai/v1/chat \
   -H "Authorization: Bearer your-cohere-api-key-here" \
   -H "Content-Type: application/json" \
   -d '{"message": "test", "model": "command", "max_tokens": 5}'
-
-
+```
 Model Not Found: Verify the model name in email_rewriter.py matches Cohere’s available models (check Cohere Docs).
 Deployment Fails on Streamlit Cloud: Ensure requirements.txt is correct and the COHERE_KEY is set in the Advanced Settings.
 
