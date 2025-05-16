@@ -176,7 +176,7 @@ Value: your-cohere-api-key-here
 * Click **Rewrite Email**
 * Toggle **Show changes** to view diffs
 
-![Working Example](https://github.com/OMCHOKSI108/AI-Email-Rewriter/raw/main/assets/Screenshot\(191\).png)
+![Working Example](https://github.com/OMCHOKSI108/EMAIL-REWRITER-AI/blob/main/assets/Screenshot(191).png)
 
 ---
 
