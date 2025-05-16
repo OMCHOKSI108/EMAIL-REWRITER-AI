@@ -176,6 +176,7 @@ Select a Tone and ModelChoose a tone (e.g., Professional) and a Cohere model (e.
 
 Rewrite and CompareClick "Rewrite Email" to generate the rewritten email. Check "Show changes" to see a diff view.
 
+![WOPRKING](https://github.com/OMCHOKSI108/AI-Email-Rewriter/raw/main/assets/Screenshot(191).png)
 
 
 🛠️ Customization
